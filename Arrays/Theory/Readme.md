@@ -143,6 +143,42 @@ Here are some example codes demonstrating the use of arrays:
 
 
 
+##DAY 5
+
+Arrays Challenge-First Repeating Element
+
+(Amazon, Oracle)
+
+Problem
+Given an array arr[] of size N. The task is to find the first repeating element in an
+array of integers, i.e., an element that occurs more than once and whose index of
+first occurrence is smallest.
+Constraints
+1 <= N <= 106
+0 <= Ai <= 106
+Example
+Input:
+7
+1 5 3 4 3 5 6
+Output:
+2
+Explanation:
+5 is appearing twice and its first appearance is at index 2 which is less than 3
+whose first occurring index is 3.
+Solution
+Base idea: To check if an element is repeating, we maintain an array idx[], which
+stores the first occurrence (index) of a particular element a[i].
+Steps
+1. Initialise the idx[] with -1, and minidx with INT_MAX.
+
+2. Keep updating idx[], while traversing the given array.
+
+Iterations
+
+
+- [Array Challenge 4](../code/ArrayChallenge4.cpp)
+
+
 
 
 
