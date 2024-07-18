@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 int main(){
-
 int n,m ;
 cin>>n>>m;
 int a=0;                           //In this case time complexity is O(m+n)
