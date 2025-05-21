@@ -1,7 +1,7 @@
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
-	struct Node{
+	class Node{
 		public:
 	int data;						//node contain data + pointer to next data
 		Node* next;
@@ -23,9 +23,10 @@ using namespace std;
 		Node* mover=head;					////mover  temp
 		
 		for(int i=1;i<arr.size();i++){
-		Node* temp =new Node(arr[1]);
+		Node* temp =new Node(arr[i]);
 		mover->next=temp;
 		mover=temp;
+		
 		
 		}return head;
 											
