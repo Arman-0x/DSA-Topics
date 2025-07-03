@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<bits\stdc++.h>
 using namespace std;
@@ -33,7 +34,7 @@ using namespace std;
 											
 	}
 	
-	Node* removek(Node* head,int k){
+	Node* remove_k_history(Node* head,int k){
 		if(head==NULL){
 			return head;
 		}
@@ -58,7 +59,7 @@ using namespace std;
 		return head;
 	}
 	
-	Node* removeel(Node* head,int el){
+	Node* remove_history(Node* head,int el){
 		if(head==NULL){
 			return head;
 		}
@@ -87,12 +88,12 @@ vector<int> arr={1,3,6,8};
 	Node* head =conarrtoll(arr);
 //	cout<<head->data;
 
- head=removek(head,4);
+ head=remove_history(head,4);
 
-head=removeel(head,6);
+head=remove_k_history(head,6);
 
 
-Node*temp=head;
+Node*temp=head;//temp ke andar head
 while(temp){
 									//do not temper the head
 		cout<<temp->data<< " ";
