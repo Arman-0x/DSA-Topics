@@ -1,0 +1,23 @@
+class Solution {
+public:
+    int triangularSum(vector<int>& nums) {
+        if(nums.size()==1){
+            return nums[0];
+        }
+
+        vector<int>ans;
+
+        for(int i=0;i<nums.size();i++){
+            if(i<nums.size() && i+1<nums.size()){
+                
+                if(nums[i]+nums[i+1]>=10){
+                    ans.push_back((nums[i]+nums[i+1])%10);
+                }
+                else{
+                     ans.push_back(nums[i]+nums[i+1]);
+                }
+            }
+        }
+      return   triangularSum(ans);
+    }
+};
