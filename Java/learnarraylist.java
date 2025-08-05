@@ -6,7 +6,7 @@ public class learnarraylist {
 
     public static void main(String args[]){
 
-        ArrayList<Integer> list=new ArrayList<>(1);
+        ArrayList<Integer> list=new ArrayList<>(1);// in array list there is tostring method that invoked when we print list
 
         // n + n/2 +1  this is how array list expand
 
@@ -43,6 +43,30 @@ list.remove(Integer.valueOf(77));// Interget.valueOf() to remove particular elem
         //to set valuse
 
         list.set(1,4);
+
+System.out.println(list);
+        Collections.reverse(list);//Collections.reverse()  to reverse the array list   //pass arrray list in the parenthesis
+
+        for(int i=0;i<list.size();i++){
+            System.out.println(list.get(i));
+        }
+
+        for(Integer it:list){//for each loop
+            System.out.print(it+" ");
+        }
+       /* for(auto it:list){//for each loop
+            System.out.print(it+" ");// java not have auto loop
+        }*/
+
+        Iterator<Integer> it = list.iterator();
+
+        while(it.hasNext()){
+
+            System.out.println(it.next());
+
+        }
+
+
  System.out.println(list);
 
     }
