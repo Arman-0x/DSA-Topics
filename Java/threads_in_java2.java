@@ -1,12 +1,17 @@
 import java.util.*;
 import java.io.*;
 class mythread1 implements Runnable{
-//creating thread by implementin grunnablee interface
+//creating thread by implementing runnable interface
     public void run(){
         System.out.println("thread 1...");
     }
 }
 class mythread2 implements Runnable{
+  public  mythread2(String name){
+
+   
+    System.out.println(name);
+    }
     @Override
     public void run(){
         System.out.println("thread 2...");
