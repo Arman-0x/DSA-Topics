@@ -18,7 +18,8 @@ public:
         }
         }
 
-    }
+    }// o(n*n!) time complexity and o(n) space complexity  because at each position we have n choices and we are generating n! permutations and space complexity is o(n) because of 
+    // the curr vector which can store at max n elements and the unordered set which can also store at max n elements
     vector<vector<int>> permute(vector<int>& nums) {
 
         vector<int>curr;
