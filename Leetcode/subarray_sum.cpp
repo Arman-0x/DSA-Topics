@@ -9,16 +9,15 @@ class Solution {
       // int maxlen=0;
       // int leftidx=0;
         for(int i=0;i<arr.size();i++){
-       
        sum=arr[i]+sum;
-       
        if(sum==target){
            //maxlen=(maxlen,i+1);
            result={1,i+1};
            return result;
        }
        long long rem=sum-target;
-       if(mp.find(rem)!=mp.end()){
+       i
+       f(mp.find(rem)!=mp.end()){
        //    leftidx=maxlen;
            result={mp[rem]+2,i+1};
            return result;
