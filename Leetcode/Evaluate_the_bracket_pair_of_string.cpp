@@ -7,7 +7,7 @@ public:
 
             mp[vec[0]]=vec[1];
         }
-
+ 
         string result="";
         int i = 0;
         int n = s.size();
